@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Mi Página en Azure</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
@@ -139,7 +140,13 @@
 
 <script>
     function mostrarMensaje() {
-        alert("¡Hola 👋 Gracias por visitar mi página!");
+        Swal.fire({
+            title: "¡Hola! 👋",
+            text: "Gracias por visitar mi página",
+            icon: "success",
+            confirmButtonText: "Entendido",
+            confirmButtonColor: "#2c3e50"
+        });
     }
 </script>
 
